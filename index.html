@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Praveesh R Shetty</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="C:\Users\shett\OneDrive\New folder\Pictures\IMG3.jpg" alt="profile picture" class="round-image"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Praveesh R Shetty</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Jeevan.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="data:image/png;base64,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"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/praveesh-r-shetty-686632258'"
+          />
+          <img
+            src="data:image/png;base64,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"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/PraveeshShetty'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills-in</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+         
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQLite</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5290/5290982.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Netflix Hompage</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PraveeshShetty/netflixclone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://praveeshshetty.github.io/netflixclone/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="data:image/png;base64,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"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Health Care landing page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PraveeshShetty/oibsip_taskno1'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://praveeshshetty.github.io/oibsip_taskno1/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://previews.123rf.com/images/fokaspokas/fokaspokas1612/fokaspokas161200006/68895732-calculator-icon-black-icon-on-transparent-background.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CALCULATOR</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PraveeshShetty/calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://praveeshshetty.github.io/calculator/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://img.freepik.com/premium-vector/mail-simple-icon-white-mail-icon-black-circle-vector-illustration-stock-image_797523-1729.jpg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:shettypraveesh2@gmail.com">shettypraveesh2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/023/986/980/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/praveesh-r-shetty-686632258">Praveesh R Shetty</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jeevan. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
